@@ -1,0 +1,329 @@
+.colors{
+   
+    background-color:#FFF6C3 #EB6440 #FFDB89 #850000 #DC0000;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(56, 52, 52);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container{
+    margin: 0;
+    padding: 0;
+
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-areas: 'head  head head'
+                         'nav nav nav'
+                         'main main main'
+                         'footer footer footer';  
+    align-items: center;
+
+    margin: 100px auto;
+    background-color: black;
+
+    grid-template-columns: repeat(3, 1fr) ;
+    border-radius: 10px;
+    
+}
+
+header{
+    grid-area: head;
+    padding-top: 20px;
+    text-align: center;
+}
+
+nav{
+    grid-column: nav;
+    background-color: rgb(208, 96, 76);
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+ 
+    
+
+
+.navigation-bar a{
+    /* text-align: center;
+    color: black; */
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    /* margin: 0;
+    padding: 14px 16px; */
+    /* width: 20%; */
+  
+  
+}  
+
+
+
+
+.promotion{
+    grid-column: promotion;
+    width: 100%;
+    height: 400px;
+    background-image: url(images/hair-image1\ \(1\).jpg);
+    background-repeat: no-repeat;
+}
+
+#about-section{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(241, 202, 195);
+}
+
+.about-text-section{
+    padding: 10px;
+   
+}
+
+main p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align: center;
+    font-size:1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 100%;
+   
+
+}
+#services-section{
+    display: flex;
+}
+
+h1{
+    
+    font-family: 'Tangerine', 'Arial Narrow', Arial, sans-serif;
+    color:#fff;
+    font-size:4rem;
+    font-weight:800; 
+    padding-top: 50px;  
+    padding-left: 35px; 
+    margin-top: 150px;
+    text-align: left;
+    padding-bottom: 20px;
+    
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(208, 96, 76);;
+    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+main{
+    grid-column: main;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgba(243, 234, 234, 0.938);
+    padding-bottom: 20px;
+}
+
+article{
+   
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15)
+    0px 48px 100px 0px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+
+    
+}
+
+.image{
+    width: 250px;
+    height: 200px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(208, 96, 76);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+    
+}
+
+
+
+footer{
+    grid-column: footer;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(208, 96, 76);
+    color: black;
+    padding: 20px;
+    border: 10px;
+}
+
+.footer-logo-image{
+    width: 200px;
+    height: 30px;
+    color: black;
+}
+.footer-image{
+    width: 50%;
+}
+
+
+a{
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+a:active{
+    background-color: black;
+    color: #fff;
+}
+
+a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+nav a{
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+
+}
+
+   
+
+@media only screen and (max-width: 860px){
+    .about-section{
+        flex-wrap: wrap;
+    }
+    .about-section p{
+        width: 100%;
+        flex-wrap: wrap;
+       }
+
+       .about-section img{
+        width: 80%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+
+       }
+
+       article{
+        width: 100%;
+        text-align: center;
+       }
+
+       footer{
+        text-align: center;
+        
+       }
+
+       .footer-image{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;}
+
+       .image{
+        width: 80%;
+        height: 350px;
+    }
+    h1{
+        margin-top: 100px;
+    }
+
+    .footer-text{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+} 
+
+@media only screen and  (max-width: 430px){
+   
+    .about-section{
+        flex-wrap: wrap;
+    }
+
+   .nav a{
+    width: 100%;
+    background-color: #850000;
+    flex-wrap: wrap;
+   }
+
+   article{
+    width: 100%;
+    text-align: center;
+   }
+   
+   .about-section p{
+    width: 100%;
+   }
+
+   footer{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+
+   .footer-image{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    
+   }
+
+   nav a{
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    right: 0;
+    top: 0;
+    
+   }
+   
+
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+    display: block;
+}
+
+}
+
+@keyframes animation{
+    from{
+        background-color: #fff;
+    }
+    to{background-color:#FFDB89 ;}
+}
